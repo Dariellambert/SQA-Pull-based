@@ -6,6 +6,7 @@ public final class Dadu {
 
      private final int jumSisi;
      private int hasil;
+     private int tamp;
 
        public Dadu() {
          this(DEFAULT_SISI);
@@ -16,8 +17,13 @@ public final class Dadu {
      }
   
     public int lempar() {
-         hasil = randGenerator.nextInt(jumSisi) + 1;  
-        return hasil;
+         this.hasil = tamp;
+         hasil = randGenerator.nextInt(jumSisi) + 1; 
+         while(hasil==tamp){
+               hasil = randGenerator.nextInt(jumSisi) + 1;
+               return hasil;
+               }
+         return hasil;
      }
   
     public int getJumSisi() {
