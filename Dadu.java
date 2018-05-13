@@ -1,4 +1,5 @@
 import java.util.Random;  
+import java.awt.color.*;
 public final class Dadu {
      public static final int DEFAULT_SISI = 6;
 
@@ -38,4 +39,5 @@ public final class Dadu {
      public String toString() {
          return "Jumlah sisi dadu: " + getJumSisi() + " hasil: " + getHasil();
      }
+
  }
